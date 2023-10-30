@@ -1,15 +1,9 @@
-
-
 function botonTotalPagar(){
-
 
     const capturaCantidad = document.getElementById("cantidad")
     const capturaCategoria = document.getElementById("categoria-estudiante")
     const valorTicket = 200
     const capturaTotal = document.getElementById("total")
-
-
-
 
     console.log("funciona el boton")
     console.log(capturaCantidad.value)
@@ -22,4 +16,6 @@ function botonTotalPagar(){
 
 }
 
-
+function resetFormulario(){
+    console.log("funciona el boton")
+}

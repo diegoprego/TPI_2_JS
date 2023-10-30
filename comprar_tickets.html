@@ -15,7 +15,7 @@
 <body>
 
   
-<!-- Inicio barra de navegacion -->
+<!-- N A V E G A C I O N -->
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -50,7 +50,7 @@
 <!-- Fin barra de navegacion -->
 
 
-<!-- Inicio Cards -->
+<!-- C A R D S -->
 <div class="container" id="estudiantes-categorias" >
     <div class="row">
         <div class="col-4">
@@ -88,83 +88,76 @@
 <!-- Fin Cards -->
 
 
-<!-- Inicio Formulario -->
-
-<div class="container">
-  <div id="formulario" class="center-content">
-    <p> <small> VENTA</small></p>
-    <h3 id="precio">VALOR DE TICKET $200</h3>
-  </div>
-</div>
-
-<!-- Nombre y Apellido -->
-<div class="container form-tickets">
-  <div class="mb-3">
-    <div class="row">
-      <div class="col-md">
-        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-      </div>
-      <div class="col-md">
-        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-      </div>
+<!-- F O R M U L A R I O -->
+<div id="formulario">
+  <div class="container" >
+    <div  class="center-content">
+      <p> <small> VENTA</small></p>
+      <h3 id="precio">VALOR DE TICKET $200</h3>
     </div>
   </div>
 
-<!-- Email -->
-  <div class="mb-3">
-    <input type="email" class="form-control" placeholder="Correo" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-
-<!-- Cantidad y Categoria -->
-  <div class="mb-3">
-    <div class="row">
-      <div class="col-md">
-        <p>Cantidad</p>
-      </div>
-      <div class="col-md">
-        <p>Categoría</p>
-      </div>
-    </div>
-    <div class="row">
+  <!-- Nombre y Apellido -->
+  <div class="container form-tickets">
+    <div class="mb-3">
+      <div class="row">
         <div class="col-md">
-          <input id="cantidad" type="number" class="form-control" placeholder="Cantidad" >
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
         </div>
         <div class="col-md">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+    </div>
+
+  <!-- Email -->
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Correo" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+  <!-- Cantidad y Categoria -->
+    <div class="mb-3">
+      <div class="row">
+        <div class="col-md">
+          <p class="cantidad-categoria">Cantidad</p>
+          <input id="cantidad" type="number" min="0" class="form-control" placeholder="Cantidad" >
+        </div>
+        <div class="col-md">
+          <p class="cantidad-categoria">Categoría</p>
           <select class="form-select" id="categoria-estudiante">
-            <option selected>Seleccione una opción</option>
+            <option value="1" selected>Seleccione una opción</option>
             <option value="0.2">Estudiante</option>
             <option value="0.5">Trainee</option>
             <option value="0.85">Junior</option>
-        </select>  
+        </select> 
         </div>
       </div>
-  </div>
-
-<!-- Total a Pagar -->
-  <div class="mb-3" id="totalPagar">
-    <div class="alert alert-primary" role="alert">
-      <div id="total">Total a Pagar: $</div>
     </div>
-   </div>
 
-<!-- Botones -->
-  <div class="d-grid gap-2 ">
-    <div class="row">
-        <div class="col-md">
-            <button id="boton-borrar" type="submit" class="btn btn-primary boton-formulario-ticket">Borrar</button>
-        </div>
-        <div class="col-md">
-            <button onclick="botonTotalPagar()" id="boton-resumen" type="submit" class="btn btn-primary boton-formulario-ticket">Resumen</button>
-        </div>
+  <!-- Total a Pagar -->
+    <div class="mb-3" id="totalPagar">
+      <div class="alert alert-primary" role="alert">
+        <div id="total">Total a Pagar: $</div>
+      </div>
+    </div>
+
+  <!-- Botones -->
+    <div class="d-grid gap-2 ">
+      <div class="row">
+          <div class="col-md">
+              <button onclick="resetFormulario()" id="boton-borrar" type="submit" class="btn btn-primary boton-formulario-ticket">Borrar</button>
+          </div>
+          <div class="col-md">
+              <button onclick="botonTotalPagar()" id="boton-resumen" type="submit" class="btn btn-primary boton-formulario-ticket">Resumen</button>
+          </div>
+      </div>
     </div>
   </div>
 </div>
-
-
 <!-- Fin Formulario -->
 
 
-<!-- Inicio Footer -->
+<!-- F O O T E R -->
 
 <footer>
   <div class="container-fluid text-center">
@@ -181,7 +174,7 @@
     </div>
   </div>
 </footer>
-
+<!-- Fin Footer -->
 
 
 
