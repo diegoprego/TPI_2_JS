@@ -102,17 +102,17 @@
     <div class="mb-3">
       <div class="row">
         <div class="col-md">
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="campoNombre">
         </div>
         <div class="col-md">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="campoApellido">
         </div>
       </div>
     </div>
 
   <!-- Email -->
     <div class="mb-3">
-      <input type="email" class="form-control" placeholder="Correo" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="campoEmail">
     </div>
 
   <!-- Cantidad y Categoria -->
@@ -120,11 +120,11 @@
       <div class="row">
         <div class="col-md">
           <p class="cantidad-categoria">Cantidad</p>
-          <input id="cantidad" type="number" min="0" class="form-control" placeholder="Cantidad" >
+          <input id="campoCantidad" type="number" min="0" class="form-control" placeholder="Cantidad" >
         </div>
         <div class="col-md">
           <p class="cantidad-categoria">Categoría</p>
-          <select class="form-select" id="categoria-estudiante">
+          <select class="form-select" id="campoCategoriaEstudiante">
             <option value="1" selected>Seleccione una opción</option>
             <option value="0.2">Estudiante</option>
             <option value="0.5">Trainee</option>
@@ -145,10 +145,10 @@
     <div class="d-grid gap-2 ">
       <div class="row">
           <div class="col-md">
-              <button onclick="resetFormulario()" id="boton-borrar" type="submit" class="btn btn-primary boton-formulario-ticket">Borrar</button>
+              <button id="boton-borrar" type="reset" class="btn btn-primary boton-formulario-ticket">Borrar</button>
           </div>
           <div class="col-md">
-              <button onclick="botonTotalPagar()" id="boton-resumen" type="submit" class="btn btn-primary boton-formulario-ticket">Resumen</button>
+              <button id="boton-resumen" type="submit" class="btn btn-primary boton-formulario-ticket">Resumen</button>
           </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="js/form-tickets.js"></script>
+    <script src="include/js/form-tickets.js"></script>
 </body>
 
 </html>
